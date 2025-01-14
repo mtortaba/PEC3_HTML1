@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Logo insertat -->
+        <div class="logo-container">
+            <!-- Incluim l'arxiu del logo svg -->
+            <img src="./images/svg/logo_tortosa.svg" alt="Logo de Tortosa" class="logo" lazy="loading">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="category.html" style="color:red"><strong>Categories</strong></a></li>
+                <li><a href="presentation.html">Presentació</a></li>
+                <li><a href="links.html">Enllaços</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Descobreix Tortosa</h2>
+            <ul>
+             
+            </div>
+                <li><a href="detail.html"><div class="contenedor_principal">
+                <div class="animation-container">
+                <!-- Imatge del pictograma -->
+                    <img src="./images/pictograma.png" alt="Què fer a Tortosa" class="pictograma"  width="100" height="100" lazy="loading">
+                <!-- Texte animat -->
+                    <div class="question1">¿Qué fer a Tortosa?</div>
+                </div>
+            </div></a></li>
+                <li><a href="detail2.html"><div class="contenedor_principal">
+                <div class="animation-container">
+                <!-- Imatge del pictograma -->
+                    <img src="./images/cocina.webp" alt="Què fer a Tortosa" class="pictograma" width="100" height="100" lazy="loading">
+                <!-- Texte animat -->
+                    <div class="question2">¿Qué menjar a Tortosa?</div>
+                </div>
+            </div></a></li>
+                <li><a href="detail3.html"><div class="contenedor_principal">
+                <div class="animation-container">
+                <!-- Imatge del pictograma -->
+                    <img src="./images/historia.jpg" style="height: 200px;" alt="Què fer a Tortosa" class="pictograma" width="100" height="100" lazy="loading">
+                <!-- Texte animat -->
+                    <div class="question3">¿Quina història té Tortosa?</div>
+                </div></a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ubicació al mapa</h2>
+            <div id="map" style="height: 500px; width: 100%;"></div>
+        </section>
+    </main>
+    <include src="./src/footer.html"></include>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

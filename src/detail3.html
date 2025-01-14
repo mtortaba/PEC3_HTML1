@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomia</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Logo insertaat-->
+        <div class="logo-container">
+            <!-- Incluim l'arxiu delo logo svg -->
+            <img src="./images/svg/logo_tortosa.svg" alt="Logo de Tortosa" class="logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="presentation.html">Presentació</a></li>
+                <li><a href="links.html">Enllaços</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section>
+                 <section>
+         <div class="contenedor_principal">
+            <div class="animation-container">
+                <!-- Imatge del pictograma -->
+                <picture>
+                    <source srcset="./images/historia400.webp" type="image/webp" media="(max-width: 800px)">
+                    <source srcset="./images/historia800.webp" type="image/webp" media="(min-width: 800px)">
+                    <img src="./images/historia.jpg" style="height: 200px;" alt="Pictograma" class="pictograma" lazy="loading">
+                </picture>
+
+                <!-- Texte animat -->
+                <div class="question3">¿Quina història té Tortosa?</div>
+            </div>
+         </div>
+    
+            <p>
+            La història de Tortosa és rica i diversa, marcada per la presència de diferents cultures i civilitzacions 
+            al llarg dels segles. Situada estratègicament a la riba del riu Ebre, Tortosa va ser poblada des de temps 
+            prehistòrics i ha estat influenciada per ibers, romans, musulmans i cristians. Durant l’època romana, la ciutat 
+            va prosperar com a centre comercial i militar, i amb la dominació musulmana es va convertir en un important 
+            emirat amb una gran activitat econòmica i cultural. La ciutat va ser reconquerida pels cristians al segle XII, 
+            sota el regnat de Ramon Berenguer IV, fet que va marcar una nova etapa en la seva història i va donar inici a 
+            la construcció de moltes de les fortificacions que encara es conserven avui dia.
+            </p>
+              <figure class="image-container">
+            <img src="./images/catedral.jpg" alt="Catedral de Tortosa" width="350" height="150" lazy="loading">
+            <figcaption>Catedral de Tortosa</figcaption>
+            </figure>
+            
+            <p>
+                Al llarg de l’edat mitjana, Tortosa es va consolidar com una ciutat de convivència entre cristians, jueus i 
+                  musulmans, amb barris diferenciats per cada comunitat. La ciutat també va viure un gran esplendor durant el 
+                    Renaixement, època en què es van construir els Reials Col·legis, considerats un dels conjunts renaixentistes 
+                més importants de Catalunya. Més recentment, durant la Guerra Civil Espanyola, Tortosa va patir nombrosos 
+                bombardejos que van destruir part de la ciutat. Avui dia, la seva arquitectura, els seus monuments
+            </p>   
+              <figure class="image-container">
+       <picture>
+    <!-- Versió AVIF per a navegadors que ho soportin -->
+    <source srcset="./images/bunquers.avif" type="image/avif" />
+    <!-- Versió WebP com respaldo per navegadores més moderns -->
+    <source srcset="./images/bunquers.webp" type="image/webp" />
+    <!-- Imagen JPG últim recurs -->
+    <img src="./images/bunquers.jpg" alt="Búnquers guerra civil"  width="350" height="150" lazy="loading"/>
+</picture>
+        
+            
+            <figcaption>Búnquers de la guerra civil</figcaption>
+            </figure>
+        <h3>Activitats culturals per fer a la ciutat</h3>
+        <ul>
+            <li><strong>Visita del Museu Municipal:</strong> Descobreix el museu municipal per descobri tota la història de la ciutat.</li>
+            <li><strong>Visita a la Catedral de Tortosa:</strong> Gaudeix de l'esplendorositat de la catedral de Tortosa i el seu museu.</li>
+            <li><strong>Experiència inmersiva en els búnquers de la guerra civil:</strong> Visitar els búnquers de la guerra civil és una experiència única i que val la pena realitzar.</li>
+        </ul>
+      </section>
+
+         <section>
+            <h2>Ubicació al mapa</h2>
+            <div id="map" style="height: 500px; width: 100%;"></div>
+        </section>
+    </main>
+    <include src="./src/footer.html"></include>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

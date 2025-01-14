@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ciutat</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Logo insertat -->
+        <div class="logo-container">
+            <!-- Incluim l'arxiu del logo svg -->
+            <img src="./images/svg/logo_tortosa.svg" alt="Logo de Tortosa" class="logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="presentation.html">Presentació</a></li>
+                <li><a href="links.html">Enllaços</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+         <div class="contenedor_principal">
+            <div class="animation-container">
+                <!-- Imatge del pictograma -->
+                <picture>
+                    <source srcset="./images/pictograma400.webp" type="image/webp" media="(max-width: 800px)">
+                    <source srcset="./images/pictograma800.webp" type="image/webp" media="(min-width: 800px)" >
+                    <img src="./images/pictograma.png" alt="Pictograma" class="pictograma"  lazy="loading">
+                </picture>
+
+                <!-- Texte animat -->
+                <div class="question1">¿Qué fer a Tortosa?</div>
+            </div>
+         </div>
+
+    
+    
+    
+    <p>
+        Tortosa ofereix una gran varietat d’activitats lúdiques per a tots els gustos i edats, combinant l’entorn natural amb la 
+        cultura i el patrimoni de la ciutat. Els visitants poden gaudir d’un dia d’excursió al Parc Natural dels Ports, on hi ha 
+        rutes de senderisme amb diferents nivells de dificultat, des de passejades relaxants fins a rutes més exigents per als amants 
+        de l’aventura. El Parc Natural també permet observar fauna autòctona i gaudir de vistes impressionants de la vall de l’Ebre. 
+        Per a aquells que prefereixin activitats aquàtiques, el riu Ebre és un espai ideal per practicar piragüisme, caiac i pesca, 
+        oferint una experiència diferent i plena de diversió en un entorn natural inigualable.
+    </p>
+        <figure class="image-container">
+
+        <img src="./images/parcNatural.jpg" alt="Tortosa" width="350" height="150"  lazy="loading">
+        <figcaption>Parc Natural dels Ports</figcaption>
+        </figure>
+        
+    <p>
+        La ciutat també és un centre d’esdeveniments culturals i festius durant tot l’any, destacant la Festa del Renaixement, 
+        una celebració anual que transporta els carrers de Tortosa al segle XVI amb vestits d’època, mercats tradicionals, música 
+        en directe i espectacles per a tota la família. Aquest festival atrau visitants d’arreu i és una experiència única per 
+        endinsar-se en la història i les tradicions de la ciutat. A més, Tortosa ofereix rutes en bicicleta per la Via Verda, una 
+        antiga via ferroviària convertida en camí ciclable que recorre paisatges naturals espectaculars. Aquesta varietat 
+        d’activitats fa de Tortosa una destinació ideal per a aquells que busquen entreteniment i diversió en un entorn històric 
+        i natural.
+    </p>
+     <figure class="image-container">
+     <div class="image-container">
+    <img src="./images/renaixement.jpg" alt="Tortosa" width="350" height="150"  lazy="loading">
+    <figcaption>Festa del Renaixement</figcaption>
+    </figure>
+    
+
+    <h3>Activitats Recomanades a Tortosa</h3>
+    <ul>
+        <li><strong>Senderisme al Parc Natural dels Ports:</strong> Explora els camins del parc i gaudeix de la seva biodiversitat.</li>
+        <li><strong>Piragüisme al riu Ebre:</strong> Navega pel riu Ebre en piragua o caiac i descobreix els paisatges des de l’aigua.</li>
+        <li><strong>Festa del Renaixement:</strong> Participa en aquest festival històric amb espectacles, mercats i vestits d’època.</li>
+    </ul>
+</section>
+
+
+
+        <section>
+            <h2>Ubicació al mapa</h2>
+            <div id="map" style="height: 500px; width: 100%;"></div>
+        </section>
+    </main>
+
+    <include src="./src/footer.html"></include>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

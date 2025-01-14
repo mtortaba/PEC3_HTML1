@@ -1,0 +1,29 @@
+{
+  "name": "pec1_mtortaba",
+  "version": "1.0.0",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "convert-images": "node convert-images.js",
+    "clean": "rimraf dist .parcel-cache",
+    "parcel:dev": "parcel src/index.html --no-cache",
+    "parcel:build": "parcel build src/index.html --no-cache",
+    "start": "npm-run-all clean convert-images parcel:dev",
+    "build": "npm-run-all clean convert-images parcel:build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Miquel Torta",
+  "license": "ISC",
+  "description": "PEC 1",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.12.0",
+    "posthtml-include": "^2.0.1",
+    "rimraf": "^6.0.1",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de la meva ciutat</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+</head>
+<body>
+    <header>
+        <!-- Logo insertat -->
+        <div class="logo-container">
+            <!-- Incluim l'arxiu del logo svg -->
+            <img src="./images/svg/logo_tortosa.svg" alt="Logo de Tortosa" class="logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color:red"><strong>Inici</strong></a></li> 
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="presentation.html">Presentació</a></li>
+                <li><a href="links.html">Enllaços</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+   
+        <section>
+         <h1>La ciutat de Tortosa</h1>
+        
+            <p>Tortosa és una ciutat situada a la província de Tarragona, a la comunitat autònoma de Catalunya.
+             És una ciutat amb una rica història i un patrimoni cultural divers.</p>
+            <ul>
+                <li><strong>Ubicació:</strong> Sud de Catalunya, prop del riu Ebre</li>
+                <li><strong>Habitants:</strong> Aproximadament 33,000</li>
+                <li><strong>Punts d'interès:</strong> Catedral de Santa Maria, Castell de la Suda, Mercat de Tortosa</li>
+            </ul>
+        </section>
+
+        <div class="section-info">
+          <h2>Introducció</h2>
+            <p>
+
+            </p>
+            <p>
+             És una ciutat, situada a la província de Tarragona i banyada pel riu Ebre, 
+             esdevenint una de les ciutats amb més història i encant del sud de Catalunya.
+              El seu origen es remunta a èpoques prehistòriques, i la seva història 
+              està marcada per la presència de diverses civilitzacions, com els ibers, 
+              els romans, els musulmans i els cristians, que han deixat empremtes profundes 
+              en el seu paisatge urbà i en la seva cultura. Aquesta barreja de cultures ha
+               creat un patrimoni arquitectònic ric i divers que es pot observar en monuments 
+               com la Catedral de Santa Maria, amb elements gòtics i barrocs, i el Castell de 
+               la Suda, una fortalesa d’origen islàmic que avui dia és un parador nacional. 
+               Les muralles i fortificacions que envolten la ciutat són testimonis d’una història 
+               agitada, especialment durant la Reconquesta i la Guerra Civil espanyola, en la qual
+                Tortosa va jugar un paper estratègic.
+            </p>
+            <div class="image-container">
+            <img src="./images/tortosa2.jpg" width="350" height="150" alt="Tortosa" lazy="loading">
+            </div>
+            <p>
+             Tortosa també és coneguda com la “ciutat del Renaixement català” per 
+             la celebració de la seva famosa Festa del Renaixement, que atrau visitants 
+             de tot el país. Aquest esdeveniment anual recrea l’època daurada de la ciutat 
+             durant els segles XV i XVI, quan Tortosa era un centre econòmic i cultural 
+             important. Els Reials Col·legis, un conjunt arquitectònic renaixentista únic a
+              Catalunya, són una mostra del seu esplendor. Aquest conjunt inclou el Col·legi 
+              de Sant Jaume i Sant Maties, el Col·legi de Sant Domènec i l’església de Sant 
+              Domènec, i s’ha convertit en un espai de gran valor per entendre el renaixement 
+              català. Passejar pels carrers del centre històric de Tortosa és com fer un viatge 
+              en el temps, amb els seus edificis històrics, les seves places i els seus estrets
+               carrerons que conserven l’ambient d’èpoques passades.
+            </p>
+            
+            <div class="image-container">
+             <img src="./images/tortosa3.jpg"  width="350" height="150" alt="Tortosa" lazy="loading">
+            </div>
+            <p>
+             A més de la seva riquesa històrica i cultural, 
+             Tortosa ofereix una gran varietat d’activitats a l’aire lliure 
+             gràcies a la seva privilegiada ubicació entre el Parc Natural dels Ports 
+             i el Parc Natural del Delta de l’Ebre. Això permet als visitants combinar 
+             la descoberta del seu patrimoni amb activitats com el senderisme, el ciclisme
+              per la Via Verda de la Terra Alta, o rutes en caiac pel riu Ebre. 
+              La gastronomia local, basada en productes frescos de l’horta i del mar, 
+              també és una part essencial de l’experiència a Tortosa. El Mercat Municipal,
+               un edifici modernista, és un lloc ideal per tastar els productes locals.
+                En resum, Tortosa és una ciutat que combina història, cultura i natura, 
+                i ofereix una experiència completa per a aquells que busquen un viatge 
+                enriquidor i autèntic.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ubicació al mapa</h2>
+            <div id="map" style="height: 500px; width: 100%;"></div>
+        </section>
+    </main>
+    <include src="./src/footer.html"></include>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
